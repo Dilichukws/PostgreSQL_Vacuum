@@ -24,15 +24,13 @@ To reproduce the dead-tuple scenario described in `postgresql-vacuum.md`:
 ```bash
 docker run --name pg-practice -e POSTGRES_PASSWORD=test123 -p 5432:5432 -d postgres
 
-<img width="1343" height="470" alt="image" src="https://github.com/user-attachments/assets/dc15e0b6-2cba-4e54-a30c-664c404e6467" />
-
-docker exec -it pg-practice psql -U postgres
-
-<img width="985" height="309" alt="image" src="https://github.com/user-attachments/assets/c70978ca-ac19-4a93-a754-27f8abda3b3c" />
-
-
 ```
+<img width="1292" height="469" alt="image" src="https://github.com/user-attachments/assets/9459337b-a5d5-4e8d-8b4b-237e6d325989" />
 
+```bash
+docker exec -it pg-practice psql -U postgres
+```
+<img width="985" height="309" alt="image" src="https://github.com/user-attachments/assets/c70978ca-ac19-4a93-a754-27f8abda3b3c" />
 
 Then inside `psql`:
 
